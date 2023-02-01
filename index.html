@@ -1,0 +1,179 @@
+<!doctype html>
+
+<!-- this is a comment for human! -->
+
+<html lang="en">
+  <header id="Home">
+    <nav>
+      <ul class="Navibar">
+        <li><a class= "bar" href="#Home">Home</a></li>
+        <li><a class= "bar" href="#Projects">Projects</a></li>
+        <li><a class= "bar" href="#Contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a href=https://www.google.com/url?sa=i&url=https%3A%2F%2Ftenor.com%2Fview%2Fkorok-yahaha-legend-of-zelda-breath-of-the-wild-loz-gif-22535699&psig=AOvVaw0djsVA3Y56MF2c1TvOK0Fv&ust=1675319931925000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCMiAz5zb8_wCFQAAAAAdAAAAABAJ><img class="icon" src="images/Logo.PNG"></a>
+    <div id="Head_box" >
+    </div>
+    <title>Tony Qi Portal </title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit-=no">
+    <meta name="name" content="Tony Qi's Portal">
+    <meta name="robots" content="noindex, nofollow">
+  </header>
+
+  <body>
+
+    <img class="profile" src="images/Hey its me thubs up.jpg" alt="banner">
+    <div class="about_me"> 
+        <h1> Tony Qi </h1>
+
+        <h2>About Me</h2>
+        <h3> I am currently a Grade 12 student enrolled in Fleetwood Park</h3>
+        <h4> I spend my free time reading and playing games with friends</h4>
+        <h4> I'm currently in the Comp-Sci 12 Co-op and pursuing Computer science</h4>
+
+        <h2>Credentials and Portfolio</h2>
+        <h3>GitHub: <a href="https://github.com/Tponya" target="_blank">https://github.com/Tponya</a></h3>
+        <h2>Education</h2>
+
+        <h3>Fleetwood Park secondary, British Columbia</h3>
+        <h4>High school diploma, GPA 4.0</h4>
+        <h2>Professional Experiences</h2>
+        <h3>English and Math tutor</h3>
+        <h4>Teach students in English and Math worldwide</h4>
+        <h4>Volunteering with OneWorldLearning since December 2020</h4>
+    </div>
+<!-- Let's try to do carousel-->
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+    </script>
+
+<!--Slideshow container-->
+<div class="Projects"><h2> Projects </h2></div>
+<div id="Projects" class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">3</div>
+    <img src="images/parametric picture.PNG" style="width:20vw">
+    <div class="text"><h3> <a href ="https://py3.codeskulptor.org/#user307_bMD1EVe0fPHCbAK.py"> Parametric function drawer with tangent and normal lines </a><h3></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">1</div>
+    <img src="images/Last stand.PNG" style="width:20vw">
+    <div class="text"><h3> <a href="https://py3.codeskulptor.org/#user306_ePUJE6hi0yCy2RU.py"> Top down survival shooter game </a></h3></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2</div>
+    <img src="images/Stand arrow stand.jpg" style="width:20vw">
+    <div class="text"><h3> Wooden led lamp made with sauder, and plexy glass</a></h3></div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<!-- Back to my code! -->
+<!--
+    <h2> Projects </h2>
+        <h3> <a href="https://py3.codeskulptor.org/#user306_DNRHvYzyKDw85JW.py"> Top down survival shooter game </a></h3>
+        <img src="images/Last stand.PNG" width="30%" alt="image of game">
+
+        <h3> Plexy glass night stand </h3>
+        <img src="images/Stand arrow stand.jpg" width="30%" alt="image of night stand">
+
+        <h3> <a href ="https://py3.codeskulptor.org/#user307_bMD1EVe0fPHCbAK.py"> Parametric function drawer with tangent and normal lines </a><h3>
+        <img src="images/parametric picture.PNG" width="30%" alt="image of parametric function flower">
+
+    <p><a href="resume.html">My Resume</a> | <a href ="https://github.com/TonyQi">My GitHub</a></p>
+    <h2>Contact</h2>
+        -->
+    <div class="inputDiv">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:qiytony2005@gmail.com">qiytony2005@gmail.com</a></p>
+    <p>Github <a href="https://github.com/Tponya">https://github.com/Tponya</a></p>
+
+
+
+    <!-- This is the form -->
+    <h2>Or contact me here:</h2>
+<!--
+    <div class="container">
+        <form class= "contact form" onsubmit="send(); reset(); return false;">
+            <h3>GET IN TOUCH</h3>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Email id" required>
+            <input type="text" id="phone" placeholder="Phone no." required>
+            <textarea id="message" rows="4" placeholder="What would you like to say?"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+  -->
+
+    <form id="Contact" class="contact_form" action="https://formsubmit.co/qiytony2005@gmail.com" method="POST">
+    <div class ="input-boxes">
+      <input type="hidden" name="_subject" value="Portfolio website email">
+      <input class= "email-box" type="email" name="email" placeholder="Email Address" required>
+      <!-- replace with deployed website when done-->
+      <input type="hidden" name="_next" value="https://tponya.github.io/">
+      <input class = "message-box" type="text" name="message" placeholder="Write your message here" required>
+      <button class = "send-box"type="submit">Send</button>
+    </div>
+    </form>
+    </div>
+  
+    
+</body>
+
+<footer>
+  <hr>
+  <code>Copyright (c) 2023 Tony Qi</code>
+
+</footer>
+</html>
+
+
+
+
+
+
